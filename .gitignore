@@ -1,8 +1,11 @@
 # Ignore everything
 *
 
-# But include all .cpp files
+# Allow directories to be traversed (but not their content)
+!*/
+
+# Include .cpp files in all directories
 !*.cpp
 
-# Optionally ignore other hidden system files like .gitignore itself or others
+# Optionally, don't ignore the .gitignore file itself
 !.gitignore
